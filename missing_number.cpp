@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+#define ll long long int
+int main()
+{
+    ll n;
+    cin >> n;
+    ll arr[n - 1];
+    ll sum = 0;
+    for (int i = 0; i < n - 1; i++)
+    {
+        cin >> arr[i];
+        sum += arr[i];
+    }
+    cout << ((ll)(n) * (ll)(n + 1)) / 2 - sum << endl;
+}
